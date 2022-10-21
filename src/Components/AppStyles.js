@@ -10,7 +10,7 @@ export const darkGreyColor = '#5E5E5E';
 export const greenColor = '#298000';
 export const backgroundColor = 'white';
 export const titleFontSize = RFValue(30);
-export const regularFontSize = RFValue(13);// change from 20 to 13
+export const regularFontSize = RFValue(12);// change from 20 to 12
 export const smallFontSize = RFValue(13);
 export const settingsPageLabelsFontSize = RFValue(16);
 export const title = {
@@ -257,12 +257,12 @@ export default {
   ImageOnRightSelectionButton: {
     Touchable: {
       margin: 5,
-      padding: 20,
+      padding: 10, // Change from 20 to 10
       backgroundColor: 'white',
       ...shadow,
-      minHeight: win.height * 0.09,// change from *0.2 to *0.09
+      minHeight: win.height * 0.1,// change from *0.2 to *0.1
       maxHeight: win.height * 0.2, // Change from *0.4 to *0.2
-      width: win.width * 0.95,
+      width: win.width * 0.8, // Change from 0.95 to 0.8
       borderColor: greyColor,
       borderRadius,
       alignItems: 'center',
@@ -270,17 +270,17 @@ export default {
     },
     View: {
       height: '80%',// change from 100% to 80%
-      width: '40%', //Change from 70% to 40
+      width: '60%', //Change from 70% to 60%
       marginRight: 20,
     },
     ImageView: {
-      height: '60%',  // Change from 100% to 60%
+      height: '100%',  
       width: '7%',
       justifyContent: 'center',
     },
     ImageInView: {
-      width: 60, // Change from 65 to 60
-      height: 60,
+      width: 50, // Change from 65 to 50
+      height: 50, //change from 65 to 50
     },
     Text: {
       color: blueColor,
@@ -288,7 +288,7 @@ export default {
       fontWeight: 'bold',
     },
     Subtext: {
-      color: greyColor,
+      color: darkGreyColor, //Change subtext color to dark grey color
       fontSize: regularFontSize,
     },
   },
